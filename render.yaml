@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: faiss-api         # Название твоего сервиса (можно любое)
+    env: python             # Указываем, что это Python-приложение
+    runtime: python         # Явно указываем среду
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
+    plan: free              # Используем бесплатный тарифный план
+    region: oregon          # Регион деплоя (оставь как есть)
+    branch: main            # Ветка GitHub-репозитория, из которой деплоить
+    autoDeploy: true        # Автоматически деплоить при пуше в GitHub
