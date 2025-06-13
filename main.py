@@ -18,3 +18,5 @@ def search_endpoint(query: str = Query(..., description="Текстовый за
     # Использование JSONResponse явно задает корректный Content-Type
     # и решает проблемы с отображением кириллицы в некоторых клиентах.
     return JSONResponse(content={"results": results})
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=7860)
