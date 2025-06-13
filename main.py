@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Query
 from fastapi.responses import JSONResponse
 from search_module import search_slides
+import uvicorn
 
 app = FastAPI(
     title="API для поиска по слайдам",
