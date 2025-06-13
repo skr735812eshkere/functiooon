@@ -8,7 +8,7 @@ import re
 DB_PATH = "num_methods.db"
 FAISS_INDEX_PATH = "faiss.index"
 SLIDE_IDS_PATH = "slide_ids.pkl"
-MODEL_NAME = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+MODEL_NAME = "sentence-transformers/paraphrase-MiniLM-L6-v2"
 
 # --- Параметры гибридного поиска ---
 TOP_K_FINAL = 5         # Сколько результатов показывать пользователю
